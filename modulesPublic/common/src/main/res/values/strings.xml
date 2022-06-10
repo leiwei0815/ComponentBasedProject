@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_home_str">首页</string>
+    <string name="main_ranking_str">榜单</string>
+    <string name="main_schedule_str">课表</string>
+    <string name="main_mine_str">我的</string>
+</resources>

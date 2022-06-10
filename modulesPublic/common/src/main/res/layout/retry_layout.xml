@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:layout_height="match_parent"
+  tools:ignore="UseCompoundDrawables">
+
+  <ImageView
+    android:layout_width="89dp"
+    android:layout_height="69dp"
+    android:src="@drawable/error_bg"
+    tools:ignore="ContentDescription" />
+
+  <TextView
+    android:id="@+id/retry_tip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="出错了~"
+    android:textSize="14dp"
+    android:layout_marginTop="13dp"
+    android:textColor="#FFA8A9AA"
+    android:gravity="center"
+    android:lineSpacingExtra="14dp"
+    tools:ignore="HardcodedText,SpUsage" />
+</LinearLayout>

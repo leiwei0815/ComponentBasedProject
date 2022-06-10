@@ -1,0 +1,86 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    dependencies {
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.41"
+    }
+}
+plugins {
+    id 'com.android.application' version '7.1.3' apply false
+    id 'com.android.library' version '7.1.3' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.20' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    isDebug = false   // 当它为true的时候, 调试模式,组件可以单独运行
+                     // 由于不能存在多个HiltAndroidApp 需要在debug模式时设置 @HiltAndroidApp -> MainDebugApplication
+
+    android = [
+            compileSdk : 30,
+            minSdk     : 21,
+            targetSdk  : 30,
+            versionCode: 1,
+            versionName: "1.0"
+    ]
+
+    applicationId = [
+            "app" : "com.music.player",
+            "main": "com.music.main",
+    ]
+
+    library = [
+            "ktx"             : "androidx.core:core-ktx:1.6.0",
+            "appcompat"       : "androidx.appcompat:appcompat:1.3.0",
+            "material"        : "com.google.android.material:material:1.4.0",
+            "constraintlayout": "androidx.constraintlayout:constraintlayout:2.0.4",
+            "startup"         : "androidx.startup:startup-runtime:1.1.0"
+    ]
+    libs = [
+            libActivityKtx : "androidx.activity:activity-ktx:1.1.0",
+            libFragmentKtx : "androidx.fragment:fragment-ktx:1.3.0",
+            libKotlinReflect : "org.jetbrains.kotlin:kotlin-reflect:1.5.10",
+            libKotlinxCoroutinesCore : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2",
+            libKotlinxCoroutinesAndroid : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+            libKotlinStdlib : "org.jetbrains.kotlin:kotlin-stdlib:1.5.10",
+            libLifecycleExtensions : "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            libLifecycleLivedataKtx : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0",
+            libLifecycleViewmodelKtx : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0",
+            libLifecycleRuntimeKtx : "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1",
+            libArouter : "com.alibaba:arouter-api:1.5.1",
+            libHilt : "com.google.dagger:hilt-android:2.41",
+            libOkHttp3 : "com.squareup.okhttp3:okhttp:4.9.3",
+            libHttpLogging : "com.squareup.okhttp3:logging-interceptor:4.9.3",
+            libRetrofit2 : "com.squareup.retrofit2:retrofit:2.9.0",
+            libRetrofit2Gson : "com.squareup.retrofit2:converter-gson:2.9.0",
+            libRetrofit2RxJava : "com.squareup.retrofit2:adapter-rxjava2:2.9.0",
+            libRxJavaAndroid : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            libRetrofitUrlManager : "me.jessyan:retrofit-url-manager:1.4.0",
+            libGlide : "com.github.bumptech.glide:glide:4.13.0",
+            libOkhttp3Integration : "com.github.bumptech.glide:okhttp3-integration:4.13.0",
+            libXUtils : 'com.blankj:utilcodex:1.31.0',
+            libRxpermissions : 'com.github.tbruyelle:rxpermissions:0.11',
+            libStatusbarutil :'com.jaeger.statusbarutil:library:1.5.1',
+            libAdapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7',
+            libLottie: 'com.airbnb.android:lottie:3.4.0',
+            libXPopup: 'com.github.li-xiaojun:XPopup:2.2.25',
+            libImmersionbar: 'com.gyf.immersionbar:immersionbar:3.0.0',
+            libLogger: 'com.orhanobut:logger:2.2.0',
+            libMmkv: 'com.tencent:mmkv-static:1.2.10',
+            libRefresh: 'com.scwang.smart:refresh-layout-kernel:2.0.3',
+            libRefreshHeader: 'com.scwang.smart:refresh-header-classics:2.0.3',
+            libRichtext: 'com.zzhoujay.richtext:richtext:2.5.1'//富文本
+    ]
+
+    apts = [
+            libArouterCompiler : "com.alibaba:arouter-compiler:1.5.1",
+            hiltAndroidCompiler: "com.google.dagger:hilt-android-compiler:2.41",
+            libHiltCompiler    : "androidx.hilt:hilt-compiler:1.0.0",
+            libGlideCompiler   : "com.github.bumptech.glide:compiler:4.13.0"
+    ]
+
+    LibNineoldandroids = "com.nineoldandroids:library:2.4.0"
+    LibGlideTransformations = "jp.wasabeef:glide-transformations:4.3.0"
+}

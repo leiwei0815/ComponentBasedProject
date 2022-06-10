@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+def cfg = rootProject.ext
+
+android {
+    compileSdk cfg.android.compileSdk
+
+    defaultConfig {
+        applicationId cfg.applicationId.app
+        minSdk cfg.android.minSdk
+        targetSdk cfg.android.targetSdk
+        versionCode cfg.android.versionCode
+        versionName cfg.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += ['-Xjvm-default','enable']
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+
+}
+kapt {
+    arguments {
+        //使用+=
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+dependencies {
+    implementation project(':modulesPublic:common')
+
+    if (!cfg.isDebug){
+        implementation project(':modulesCore:main')
+    }
+
+    cfg.libs.each{key,value -> implementation value}
+    cfg.apts.each{key,value -> kapt value}
+}

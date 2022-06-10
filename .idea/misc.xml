@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/activity_aa.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/activity_bb.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/activity_course.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/activity_get.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.1342451874366768" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/activity_set.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/fragment_momo.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/fragment_ya.xml" value="0.1276595744680851" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/item_course_cover.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/app/src/main/res/layout/item_test.xml" value="0.1344984802431611" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/activity_main.xml" value="0.24592391304347827" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/activity_mine.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/activity_test.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/fragment_blank.xml" value="0.12259371833839919" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/fragment_home.xml" value="0.11231884057971014" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/fragment_mine.xml" value="0.1274062816616008" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/fragment_schedule.xml" value="0.1276595744680851" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/fragment_user.xml" value="0.1160081053698075" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesCore/main/src/main/res/layout/fragment_vip.xml" value="0.1276595744680851" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/drawable/ic_launcher_background.xml" value="0.1615" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/drawable/no_match_bg.xml" value="0.104" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/activity_main.xml" value="0.24592391304347827" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/activity_simple.xml" value="0.1" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/activity_splash.xml" value="0.24592391304347827" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/default_topbar.xml" value="0.1276595744680851" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/fragment_blank.xml" value="0.19583333333333333" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/item_more_data.xml" value="0.1276595744680851" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/item_no_data.xml" value="0.1276595744680851" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/item_no_match.xml" value="0.1276595744680851" />
+        <entry key="..\:/mvvm/MusicPlayer/modulesPublic/common/src/main/res/layout/loading_dialog.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
