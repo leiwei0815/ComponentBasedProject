@@ -1,6 +1,6 @@
 # ComponentBasedProject
 
-**项目主要是通过组件化的思路,把项目拆分为主工程, 业务组件层, 功能组件层, 基础组件层**
+**支持MVP/MVVM的组件化框架, 主要是通过组件化的思路,把项目拆分为主工程, 业务组件层, 功能组件层, 基础组件层**
 
 ![image](https://user-images.githubusercontent.com/72546851/173012428-25cdc8a8-6c28-44aa-bb1b-1bbda533685b.png)
 
